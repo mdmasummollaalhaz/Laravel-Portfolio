@@ -13,7 +13,24 @@ return new class extends Migration
     {
         Schema::create('seoproperties', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+
+            $table->enum('pageName',['home', 'resume', 'projects', 'contact']);
+
+            // Google SEO
+            $table->string('title', 100);
+            $table->string('keywords', 1000);
+            $table->string('description', 1000);
+
+            // Social SEO
+            $table->string('ogSiteName', 500);
+            $table->string('ogUrl', 200);
+            $table->string('ogTitle', 300);
+            $table->string('ogDescription', 1000);
+            $table->string('ogImage', 300);
+
+            // Common table
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 
