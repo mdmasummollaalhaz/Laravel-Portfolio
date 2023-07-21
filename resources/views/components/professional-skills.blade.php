@@ -2,7 +2,7 @@
     <div class="row gx-5 justify-content-center">
         <div class="col-lg-11 col-xl-9 col-xxl-8">
             <!-- Skills Section-->
-            <section>
+            <h2 class="text-secondary fw-bolder mb-4">Professional Skills</h2>
                 <!-- Skillset Card-->
                 <div class="card shadow border-0 rounded-4 mb-5">
                     <div class="card-body p-5">
