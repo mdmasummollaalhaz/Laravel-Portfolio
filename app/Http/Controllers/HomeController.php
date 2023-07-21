@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     // Page
     function page(Request $request){
-        // return view('pages.home');
+        return view('pages.home');
     }
 
     // Hero Data

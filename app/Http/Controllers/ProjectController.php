@@ -9,7 +9,7 @@ class ProjectController extends Controller
 {
     // Page
     function page(Request $request){
-        // return view('pages.projects');
+        return view('pages.projects');
     }
 
     // Projects Data
