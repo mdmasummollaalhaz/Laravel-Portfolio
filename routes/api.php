@@ -32,4 +32,4 @@ Route::get('/experiencesData', [ResumeController::class, 'experiencesData']);
 Route::get('/educationsData', [ResumeController::class, 'educationsData']);
 Route::get('/skillsData', [ResumeController::class, 'skillsData']);
 Route::get('/languagesData', [ResumeController::class, 'languagesData']);
-Route::get('/contactRequest', [ContactController::class, 'contactRequest']);
+Route::post('/contactRequest', [ContactController::class, 'contactRequest']);
