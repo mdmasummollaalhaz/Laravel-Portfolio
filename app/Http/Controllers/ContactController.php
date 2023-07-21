@@ -14,6 +14,6 @@ class ContactController extends Controller
 
     // Contact Request
     function contactRequest(Request $request){
-        return DB::table('contacts')->first();
+        return DB::table('contacts')->insert($request->input());
     }
 }
