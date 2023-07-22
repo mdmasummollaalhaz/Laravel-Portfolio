@@ -9,7 +9,8 @@ class ContactController extends Controller
 {
     // Page
     function page(Request $request){
-        return view('pages.contact');
+        $seo =DB::table('seoproperties')->where('pageName', '=', 'contact')->first();
+        return view('pages.contact', ['seo'=>$seo]);
     }
 
     // Contact Request
