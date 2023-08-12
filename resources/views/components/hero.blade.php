@@ -17,7 +17,7 @@
             <div class="col-xxl-7">
                 <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                     <div class="profile">
-                        <img class="profile-img" id="profileImg" src="" alt="..." />
+                        <img class="profile-img" id="profileImg" src="" alt="img" />
                     </div>
                 </div>
             </div>
